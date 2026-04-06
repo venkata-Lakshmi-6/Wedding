@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Balu ❤️ Lakshmi Wedding</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+    text-align: center;
+    background: black;
+}
+
+/* Hero Section */
+.hero {
+    height: 100vh;
+    background: url('/mnt/data/lakshmi.jpeg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.overlay {
+    background: rgba(0,0,0,0.6);
+    padding: 40px;
+    border-radius: 20px;
+}
+
+h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 45px;
+}
+
+button {
+    margin-top: 20px;
+    padding: 12px 30px;
+    border-radius: 30px;
+    border: none;
+    background: gold;
+    color: black;
+    cursor: pointer;
+}
+
+/* Details Section */
+.details {
+    display: none;
+    padding: 40px;
+    background: #111;
+}
+
+/* Gallery */
+.gallery img {
+    width: 250px;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/* Animation */
+.fade {
+    animation: fadeIn 2s;
+}
+
+@keyframes fadeIn {
+    from {opacity: 0;}
+    to {opacity: 1;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <div class="overlay">
+        <h1>Balu ❤️ Lakshmi</h1>
+        <p>We invite you to celebrate our wedding 💍</p>
+        <button onclick="openInvite()">Open Invitation</button>
+    </div>
+</div>
+
+<!-- DETAILS -->
+<div class="details fade" id="details">
+    <h2>💍 Wedding Ceremony</h2>
+    <p>📅 30 April 2026</p>
+    <p>⏰ 12:48 AM</p>
+    <p>📍 Sri Veera Venkata Satyanarayana Swamy Vari Devasthanam</p>
+    <p>With love & blessings, join our beautiful journey ❤️</p>
+
+    <!-- GALLERY -->
+    <div class="gallery">
+        <img src="/mnt/data/lakshmi.jpeg">
+        <img src="/mnt/data/lakshmi2.jpeg">
+        <img src="/mnt/data/lakshmi3.jpeg">
+        <img src="/mnt/data/lakshmi4.jpeg">
+        <img src="/mnt/data/photo.jpeg">
+    </div>
+</div>
+
+<!-- MUSIC -->
+<audio id="music" loop>
+    <source src="https://www.w3schools.com/html/horse.mp3" type="audio/mp3">
+</audio>
+
+<script>
+function openInvite() {
+    document.getElementById("details").style.display = "block";
+    document.getElementById("music").play();
+    window.scrollTo({ top: document.body.scrollHeight, behavior: 'smooth' });
+}
+</script>
+
+</body>
+</html>
