@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Balu ❤️ Lakshmi Wedding</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@300&display=swap" rel="stylesheet">
+
+<style>
+body {
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    background: #f8f8f8;
+    color: #333;
+}
+
+/* HERO */
+.hero {
+    height: 100vh;
+    background: url('lakshmi.jpeg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.hero h1 {
+    font-family: 'Playfair Display', serif;
+    font-size: 50px;
+}
+
+/* BUTTONS */
+.nav-buttons {
+    margin-top: 20px;
+}
+.nav-buttons button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 25px;
+    background: #ff4d4d;
+    color: white;
+    cursor: pointer;
+}
+
+/* SECTION */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+}
+
+/* CARD */
+.card {
+    background: white;
+    padding: 30px;
+    border-radius: 15px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+    max-width: 900px;
+    margin: auto;
+    line-height: 1.8;
+}
+
+/* GALLERY */
+.gallery img {
+    width: 200px;
+    margin: 10px;
+    border-radius: 10px;
+}
+</style>
+</head>
+
+<body>
+
+<!-- HERO -->
+<div class="hero">
+    <div>
+        <h1>Balu ❤️ Lakshmi</h1>
+        <p>Together with our families, we invite you to celebrate our wedding 💍</p>
+
+        <div class="nav-buttons">
+            <button onclick="scrollToSection('invite')">Invitation</button>
+            <button onclick="scrollToSection('story')">Our Story</button>
+            <button onclick="scrollToSection('marriage')">About Marriage</button>
+            <button onclick="scrollToSection('details')">Details</button>
+            <button onclick="scrollToSection('blessings')">Blessings</button>
+            <button onclick="scrollToSection('gallery')">Gallery</button>
+        </div>
+    </div>
+</div>
+
+<!-- INVITATION -->
+<div id="invite" class="section">
+    <div class="card">
+        <h2>Wedding Invitation 💌</h2>
+        <p>With the blessings of our beloved parents and elders, we, Balu and Lakshmi, cordially invite you to be a part of our wedding celebration.</p>
+
+        <p>This is not just a ceremony, but the beginning of a lifelong journey filled with love, trust, and togetherness. Your presence will make this occasion truly meaningful and memorable for us.</p>
+
+        <p>We request the honor of your presence to bless us as we take this beautiful step together.</p>
+    </div>
+</div>
+
+<!-- STORY -->
+<div id="story" class="section">
+    <div class="card">
+        <h2>Our Story 💖</h2>
+        <p>Every love story is special, but ours is a journey we cherish deeply. What started as a simple meeting slowly turned into a bond filled with understanding, care, and endless love.</p>
+
+        <p>Through every moment, we found strength in each other and built a connection that grows stronger every day. Now, we are ready to begin a new chapter, promising to stand by each other through all walks of life.</p>
+    </div>
+</div>
+
+<!-- ABOUT MARRIAGE -->
+<div id="marriage" class="section">
+    <div class="card">
+        <h2>About Marriage 💍</h2>
+        <p>Marriage is not just a union of two individuals, but a beautiful bond that brings together two hearts, two families, and two souls into one journey.</p>
+
+        <p>It is built on love, trust, respect, and companionship. It is about growing together, supporting each other, and creating a life filled with happiness and understanding.</p>
+
+        <p>As we step into this sacred bond, we look forward to building a future filled with love, laughter, and endless memories.</p>
+    </div>
+</div>
+
+<!-- DETAILS -->
+<div id="details" class="section">
+    <div class="card">
+        <h2>Wedding Details 💍</h2>
+        <p><strong>Date:</strong> 30 April 2026</p>
+        <p><strong>Time:</strong> 12:48 AM</p>
+        <p><strong>Venue:</strong> Sri Veera Venkata Satyanarayana Swamy Vari Devasthanam</p>
+
+        <p>We warmly welcome you to join us and celebrate this auspicious occasion with love and blessings.</p>
+    </div>
+</div>
+
+<!-- BLESSINGS -->
+<div id="blessings" class="section">
+    <div class="card">
+        <h2>Your Blessings ❤️</h2>
+        <p>Your blessings and good wishes mean everything to us. As we begin this new chapter of our lives, we seek your love, support, and guidance.</p>
+
+        <p>We believe that your presence will add more joy and happiness to our celebration and make our day truly unforgettable.</p>
+    </div>
+</div>
+
+<!-- GALLERY -->
+<div id="gallery" class="section">
+    <h2>Memories 📸</h2>
+    <div class="gallery">
+        <img src="lakshmi.jpeg">
+        <img src="lakshmi2.jpeg">
+        <img src="lakshmi3.jpeg">
+        <img src="lakshmi4.jpeg">
+        <img src="photo.jpeg">
+    </div>
+</div>
+
+<!-- FOOTER -->
+<div class="section">
+    <h2>With Love ❤️</h2>
+    <p>Balu & Lakshmi</p>
+</div>
+
+<script>
+function scrollToSection(id) {
+    document.getElementById(id).scrollIntoView({
+        behavior: 'smooth'
+    });
+}
+</script>
+
+</body>
+</html>
